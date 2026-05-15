@@ -25,7 +25,7 @@
 - [Architecture](#architecture)
 - [Installation](#installation)
 - [API Usage](#api-usage)
-- [White Paper](https://mercurius.notion.site/MERC-AI-DARKNET-35e71bcc1f338046a977e8c391a73a4d)
+- [White Paper](#white-paper)
 
 ---
 
