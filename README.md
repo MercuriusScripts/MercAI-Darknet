@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="docs/images/mercai_logo.png" alt="MercAI Darknet Logo" width="200"/>
+  <img src="docs/images/gpt-image-2_Create_a_dark_sinister_highly_professional_logo_for_MercAI_Darknet_-_an_unrestri-0.jpg" alt="MercAI Darknet Logo" width="200"/>
   
   # MERC AI DARKNET V1.0
   
