@@ -29,9 +29,19 @@
 
 ---
 
-# MercAI Darknet V1.0
+## 📄 White Paper
 
-**Unrestricted, locally-hosted language model for dark web intelligence gathering.**
+The complete technical documentation for MercAI Darknet V1.0 is available on Notion:
+
+[🔗 **View Full White Paper**](https://www.notion.so/MERC-AI-DARKNET-35e71bcc1f338046a977e8c391a73a4d)
+
+**Includes:**
+- System architecture and design philosophy
+- API specifications and endpoints
+- Operational Security (OPSEC) guidelines
+- Complete code archives
+- Deployment steps
+- Legal and ethical framework
 
 ---
 
@@ -41,7 +51,8 @@
 - 🔒 **Zero Content Filtering** – No output censorship
 - 🌐 **Hidden Service API** – Accessible via .onion only
 - 🖥️ **Local Only** – Runs on Kali Linux, no cloud
-- ⚡ **Fast Inference** – Mistral-7B base model
+- ⚡ **Fast Inference** – Mistral-7B via Ollama
+- 💾 **External Storage** – Models on external drive
 
 ---
 
@@ -49,24 +60,38 @@
 
 | Component | Technology |
 |:---|:---|
-| Base Model | Mistral-7B-Instruct-v0.3 |
-| API Framework | FastAPI + Uvicorn |
+| Base Model | Mistral-7B (Ollama) |
+| API Framework | Flask + Python |
 | Anonymity | Tor + Proxychains |
-| Deployment | Kali Linux (local) |
+| Deployment | Kali Linux (VirtualBox) |
+| Storage | External drive (A_DRIVE) |
 
 ---
 
-## Deployment
+## Installation
+
+### Prerequisites
+
+- Kali Linux (or any Debian-based distro)
+- 8GB RAM minimum
+- Tor and proxychains configured
+- External drive for model storage (recommended)
+
+### Quick Start
 
 ```bash
 # Clone the repository
 git clone https://github.com/MercuriusScripts/MercAI-Darknet.git
 cd MercAI-Darknet
 
-# Setup environment
+# Setup Python environment
 python3 -m venv venv
 source venv/bin/activate
-pip install -r requirements.txt
+pip install flask flask_cors
 
-# Run with Tor
-proxychains python3 mercai_engine.py
+# Install Ollama and pull model
+curl -fsSL https://ollama.com/install.sh | sh
+ollama pull mistral
+
+# Run the API server
+python3 api/mercai_api.py
