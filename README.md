@@ -1,3 +1,34 @@
+<div align="center">
+  <img src="docs/images/mercai_logo.png" alt="MercAI Darknet Logo" width="200"/>
+  
+  # MERC AI DARKNET V1.0
+  
+  **Unrestricted Dark Web Intelligence LLM**
+  
+  [![Tor](https://img.shields.io/badge/Tor-Anonymous-8A2BE2)](https://www.torproject.org/)
+  [![License](https://img.shields.io/badge/License-Private-red)]()
+  [![Status](https://img.shields.io/badge/Status-Active-brightgreen)]()
+  
+</div>
+
+---
+
+## ⚠️ IMPORTANT DISCLAIMER
+
+**This tool is for authorized security research only. User assumes all legal responsibility.**
+
+---
+
+## 📋 Table of Contents
+
+- [Features](#features)
+- [Architecture](#architecture)
+- [Installation](#installation)
+- [API Usage](#api-usage)
+- [White Paper](#white-paper)
+
+---
+
 # MercAI Darknet V1.0
 
 **Unrestricted, locally-hosted language model for dark web intelligence gathering.**
