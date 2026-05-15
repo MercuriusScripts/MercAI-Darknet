@@ -95,3 +95,31 @@ ollama pull mistral
 
 # Run the API server
 python3 api/mercai_api.py
+
+API Usage
+Endpoint: POST /ask
+
+curl -X POST http://127.0.0.1:5000/ask \
+  -H "Content-Type: application/json" \
+  -d '{"prompt": "What is dark web intelligence?"}'
+
+Endpoint: GET /status
+curl http://127.0.0.1:5000/status
+
+Expected Response
+{
+  "status": "success",
+  "response": "Answer text here",
+  "model": "MercAI Darknet V1.0",
+  "restrictions": "NONE"
+}
+
+📚 More Information
+For complete documentation, architecture details, and code archives, please refer to the White Paper.
+
+📧 Contact
+GitHub: MercuriusScripts
+
+Email: mercurius.ozeus@proton.me
+
+///....MERC AI DARKNET V1.0 - UNRESTRICTED....///
