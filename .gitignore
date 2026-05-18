@@ -1,0 +1,29 @@
+# Secrets and configs
+.env
+*.onion
+*_secret*
+config_local.py
+
+# Logs
+*.log
+logs/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environment
+venv/
+env/
+
+# Local data
+data/
+*.db
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Your local notes
+*_notes.txt
+*.local
