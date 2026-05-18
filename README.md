@@ -60,7 +60,7 @@ The complete technical documentation for MercAI Darknet V1.0 is available on Not
 
 | Component | Technology |
 |:---|:---|
-| Base Model | Mistral-7B (Ollama) |
+| Base Model | Llama 3.2 3B (Ollama) |
 | API Framework | Flask + Python |
 | Anonymity | Tor + Proxychains |
 | Deployment | Kali Linux (VirtualBox) |
@@ -91,7 +91,7 @@ pip install flask flask_cors
 
 # Install Ollama and pull model
 curl -fsSL https://ollama.com/install.sh | sh
-ollama pull mistral
+ollama pull llama3.2:3b
 
 # Run the API server
 python3 api/mercai_api.py
